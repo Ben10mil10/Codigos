@@ -1,0 +1,21 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace _10_DatesAndTimes
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            DateTime myValue = DateTime.Now;
+                        DateTime myBirthday = DateTime.Parse("04/1/2006");
+            TimeSpan myAge = DateTime.Now.Subtract(myBirthday);
+            Console.WriteLine(myAge.TotalDays);
+
+            Console.ReadLine();
+        }
+    }
+}
